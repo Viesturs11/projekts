@@ -75,7 +75,7 @@ public class SaveRecordServlet extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Attempt to establish the connection
-            connection1 = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
+            connection1 = DriverManager.getConnection(env.jdbcURL, env.dbUser, env.dbPassword);
 
             // Check if the connection is successful
             if (connection1 != null) {
