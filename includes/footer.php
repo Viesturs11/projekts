@@ -1,6 +1,10 @@
+<?php
+session_start();  // Start the session to track login status
+
+?>
 
 </div>
-<div id="footer">Copyright 2007, Widget Copr</div>
+<div id="footer">Copyright <?php echo date('Y'); ?>, Widget Copr</div>
 
 </body>
 </html>

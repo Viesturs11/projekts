@@ -15,9 +15,13 @@ table, tr, td { border-collapse: collapse; vertical-align: top; font-size: 13px;
     line-height: 15px;}
     a { color: #8D0D19;}
 
-#header { height: 70px; margin: 0px; padding: 0px; text-align: left;
+#header { height: 110px; margin: 0px; padding: 0px; text-align: left;
     background: #1A446C; color: #D4E6F4; }
 #header h1 { padding: 1em; margin: 0px;}
+#header a { 
+	padding: 1em;
+	color: black;
+}
 #main { margin: 0px; padding: 0px; height: 600px; width: 100%; background: #EEE4B9 ;}
 #structure { height: 600px; width: 100%; }
 #footer { height: 2em; margin: 0px; padding: 1em; text-align: center;
