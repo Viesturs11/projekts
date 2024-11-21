@@ -1,0 +1,5 @@
+asdasddas
+
+<?php
+	phpinfo();
+?>
