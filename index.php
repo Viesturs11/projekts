@@ -1,6 +1,8 @@
 <?php
 ini_set('display_errors', 1);
-error_reporting(E_ALL); ?>
+error_reporting(E_ALL);
+session_start(); ?>
+
 <?php require_once("includes/connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 <?php 
@@ -70,7 +72,15 @@ while ($subject = mysqli_fetch_array($subject_set)) {
 <?php } elseif (!is_null($sel_page)) { //page selected ?>
   <h2><?php echo $sel_page['menu_name']; ?></h2>
   <?php } else { // nothing selected ?>
-    <h2>Select a subject or page to edit</h2>
+  	<?php
+  	
+		if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+			echo '<h2>You can make migration</h2>';
+		} else {
+			echo '<h2>For special functionality, please login.</h2>';
+		}
+  	?>
+    
 <?php }?>
 
 </td>
