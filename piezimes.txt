@@ -4,3 +4,4 @@
 4
 5
 6 prieks new feature vajadzigas izmainas
+7 relizei vajadzigie papildinajumi
